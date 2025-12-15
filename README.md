@@ -7,7 +7,6 @@ API REST desarrollada con **Spring Boot 3.5.8** y **Java 21** para gestionar pr√
 ### Requisitos
 - Java 21+
 - Maven 3.9+
-- H2 Database (incluida)
 
 ### Ejecutar la aplicaci√≥n
 
