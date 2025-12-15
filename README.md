@@ -7,6 +7,7 @@ API REST desarrollada con **Spring Boot 3.5.8** y **Java 21** para gestionar pr�
 ### Requisitos
 - Java 21+
 - Maven 3.9+
+- PostgreSQL 18+
 
 ### Ejecutar la aplicación
 
@@ -46,6 +47,21 @@ La aplicación inicia en `http://localhost:8080`
 
 ---
 
+## 💾 Base de Datos
+
+**PostgreSQL** (localhost:5432)
+- Base de datos: `practicas_db`
+- Usuario: `postgres`
+- Contraseña: (vacía)
+
+Para conectar desde pgAdmin o DBeaver:
+```
+Host: localhost
+Port: 5432
+Database: practicas_db
+Username: postgres
+```
+
 ---
 
 ## 📝 Ejemplo Request
@@ -77,6 +93,7 @@ Content-Type: application/json
 ✅ Auditoría automática (@CreatedDate, @LastModifiedDate)  
 ✅ Transacciones ACID (@Transactional)  
 ✅ API REST con soporte CORS  
+✅ PostgreSQL como base de datos persistente  
 
 ---
 
