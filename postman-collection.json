@@ -1,0 +1,371 @@
+{
+  "info": {
+    "name": "Sistema de Gestión de Prácticas Profesionales - CRUD",
+    "description": "Colección completa de pruebas para el sistema de prácticas profesionales con Spring Boot",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "ESTUDIANTES",
+      "item": [
+        {
+          "name": "Crear Estudiante",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombreCompleto\": \"Nuevo Estudiante Test\",\n  \"email\": \"nuevo.estudiante@ipss.cl\",\n  \"carrera\": \"Ingeniería en Sistemas\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Todos los Estudiantes",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Estudiante por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Estudiante",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombreCompleto\": \"Juan Pérez García - Actualizado\",\n  \"email\": \"juan.perez.updated@ipss.cl\",\n  \"carrera\": \"Informática - Especialidad IA\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes", "1"]
+            }
+          }
+        },
+        {
+          "name": "Eliminar Estudiante",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/estudiantes/4",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "estudiantes", "4"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PROFESORES",
+      "item": [
+        {
+          "name": "Crear Profesor",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombreCompleto\": \"Nuevo Profesor\",\n  \"email\": \"nuevo.profesor@ipss.cl\",\n  \"especialidad\": \"Administración\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/profesores",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Todos los Profesores",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/profesores",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Profesor por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/profesores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Profesor",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"nombreCompleto\": \"Dr. Carlos Martínez - Actualizado\",\n  \"email\": \"carlos.martinez.updated@ipss.cl\",\n  \"especialidad\": \"Tecnología e Innovación\"\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/profesores/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores", "1"]
+            }
+          }
+        },
+        {
+          "name": "Eliminar Profesor",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/profesores/3",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "profesores", "3"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "PRÁCTICAS",
+      "item": [
+        {
+          "name": "Crear Práctica (Estudiante)",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fechaInicio\": \"2024-12-01\",\n  \"fechaTermino\": \"2025-02-28\",\n  \"descripcionActividades\": \"Desarrollo de módulo de autenticación en plataforma web utilizando Spring Boot\",\n  \"nombreEmpresa\": \"Innovation Tech Ltd\",\n  \"direccionEmpresa\": \"Av. Innovación 999, Providencia\",\n  \"telefonoEmpresa\": \"2-2999999\",\n  \"nombreJefeDirecto\": \"Ing. Alejandro Torres\",\n  \"estudiante\": {\n    \"id\": 1\n  },\n  \"profesorSupervisor\": {\n    \"id\": 1\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/estudiante",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "estudiante"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Todas las Prácticas (Profesor)",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/profesor/todas",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "profesor", "todas"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Prácticas de Estudiante",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/estudiante/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "estudiante", "1"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Práctica por ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "1"]
+            }
+          }
+        },
+        {
+          "name": "Actualizar Práctica (Profesor)",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"fechaInicio\": \"2024-12-01\",\n  \"fechaTermino\": \"2025-03-31\",\n  \"descripcionActividades\": \"Desarrollo de módulo de autenticación con OAuth2 en plataforma web\",\n  \"nombreEmpresa\": \"Innovation Tech Ltd - ACTUALIZADA\",\n  \"direccionEmpresa\": \"Av. Innovación 999, Providencia, Santiago\",\n  \"telefonoEmpresa\": \"2-2999999\",\n  \"nombreJefeDirecto\": \"Ing. Alejandro Torres Villalobos\",\n  \"estudiante\": {\n    \"id\": 1\n  },\n  \"profesorSupervisor\": {\n    \"id\": 1\n  }\n}"
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "1"]
+            }
+          }
+        },
+        {
+          "name": "Eliminar Práctica (Profesor)",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/3",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "3"]
+            }
+          }
+        },
+        {
+          "name": "Obtener Prácticas por Profesor",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:8080/api/practicas/profesor/1",
+              "protocol": "http",
+              "host": ["localhost"],
+              "port": "8080",
+              "path": ["api", "practicas", "profesor", "1"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
